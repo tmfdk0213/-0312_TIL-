@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경적용</title>
+    <style>
+    @font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family:'TAEBAEKmilkyway'
+}
+/* 폰트를 적용할때는 바디를 써서 적용해줘야 폰트가 적용된다*/
+
+div{
+    color: yellow;
+    font-weight:bold;
+    border: 10px dotted salmon;
+    text-align: center;
+    padding:10px;
+    font-size: 24px;
+    margin bottom: 50px;
+    background-color:skyblue;
+}
+
+/* [  ]:특정선택자는 주어진 특성을 가진 모든요소를 선택합니다*/
+[class^="box"]{
+background-image: url(choco.jpg);
+}
+
+.box1{
+    background-clip: border-box;
+}
+
+.box2{
+    background-clip: padding-box;
+
+}
+
+
+
+.box3{
+    background-clip: content-box;
+}
+
+
+/*배경색을 투명하게 만들고 싶다면 transparent를 사용한다*/
+.box4{
+    color:transparent;
+    background-clip: text;
+-webkit-background-clip: text;
+/*webkit은 구글,사파리 브라우저에 적용하기ㅟ해 필요한 접두어이다*/
+}
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>배경을 적용해보자</h1>
+      </div>
+      
+      <div class="box1">
+        <h1>배경을 적용해보자</h1>
+      </div>
+      
+      <div class="box2">
+        <h1>배경을 적용해보자</h1>
+      </div>
+      
+      <div class="box3">
+        <h1>배경을 적용해보자</h1>
+      </div>
+      
+      <div class="box4">
+        <h1>배경을 적용해보자</h1>
+      </div>
+</body>
+</html>
