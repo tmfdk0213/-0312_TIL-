@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스꾸미기</title>
+    <style>
+div~div{
+    margin-top: 20px;
+}
+
+div{
+width: 100px;
+height: 50px;
+line-height: 40px;
+text-align: center;
+box-sizing: border-box;
+
+
+}
+
+.box1{color:#fff;
+    border: 5px solid #000;
+font-weight: 100;
+background-color: #327b95;
+box-shadow: inset 5px 5px #4a5568;
+
+}
+
+
+.box2{
+    color:#fff;
+    border-width: 5px 0 0 5px #000;
+    background-color: #343F50;
+border: 10px solid #000;
+outline: 5px solid #000;
+
+}
+.box2:focus{outline-color: royalblue;
+}
+/*아웃라인을 사용한다면 포커스 된 상태까지 고려할 것*/
+
+
+
+.box3{color:#fff;
+
+    border-radius:24px;
+    border: 10px dashed rgb(134, 17,136);
+    background: linear-gradient(180deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    background-clip: padding-box;
+    background-color: #f4fe6e
+   
+}
+
+.box4{
+    color: #fff;
+    background:linear-gradient(180deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);   
+    border-radius: 24px;
+    border: 5px dashed rgb(134, 17,136);
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+.box5{
+   border: 5px solid #ddd;
+   border-radius: 0 24px 24px 24px;
+   box-shadow: 5px 5px 10px 0px;
+  
+}
+
+    </style>
+</head>
+<body>
+    <div class="box1">Hello🖐️</div>
+    <div class="box2">Hello🖐️</div>
+    <div class="box3">Hello🖐️</div>
+    <div class="box4">Hello🖐️</div>
+    <div class="box5">Hello🖐️</div>
+
+</body>
+</html>
